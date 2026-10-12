@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNES NFC</title>
+    <style>
+        html, body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background: #000;
+            overflow: hidden;
+        }
+        #game {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+    <script>
+        EJS_player = "#game";
+        EJS_core = "snes";
+        EJS_gameName = "Mi Juego SNES";
+        EJS_gameUrl = new URL("roms/juego.sfc", window.location.href).href;
+        EJS_startOnLoaded = true;
+        EJS_threads = false;
+        EJS_color = "#e60012";
+        EJS_backgroundColor = "#000000";
+        EJS_language = "es-419";
+        EJS_pathtodata = "https://cdn.emulatorjs.org/stable/data/";
+    </script>
+    <script src="https://cdn.emulatorjs.org/stable/data/loader.js"></script>
+</head>
+<body>
+    <div id="game"></div>
+</body>
+</html>
